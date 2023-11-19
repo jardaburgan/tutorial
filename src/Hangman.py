@@ -1,11 +1,11 @@
 import random
 
-# Generování náhodného slova
+# Generování náhodného slova, které bychom měli uhádnout
 resorts = ["amade", "kitzbuhel", "dachstein","hinterstoder", "pitztal"]
 random_resort = resorts[random.randint(0,len(resorts)-1)]
-print(random_resort)
+# print(random_resort)
 
-# Generování podtržítek a přehození listu do stringu
+# Generování podtržítek místo písmenek a přehození listu do stringu
 hidden_word = []
 for one_letter in random_resort:
     hidden_word.append("_")
@@ -30,13 +30,14 @@ while "_" in hidden_word:
     print(f"Počet Vašich životů je {lives}.")
     if lives == 0:
         print("Prohrál jsi!!!")
+        break
 
 # Vypsání zkrytého slova v normální podobě a ne jako list
-printedWord = ""
-for one_letter in hidden_word:
-    printedWord +=one_letter
-print(printedWord)
+    printedWord = ""
+    for one_letter in hidden_word:
+        printedWord +=one_letter
+    print(printedWord)
 
-# Kontrola vítezství
-if "_" not in hidden_word:
-    print("Vyhrál jsi!!!")
+    # Kontrola vítezství
+    if "_" not in hidden_word:
+        print("Vyhrál jsi!!!")
