@@ -1,10 +1,13 @@
-number = int(input("Zadej celé kladné a číslo a já ti řeknu, zda je zadané číslo prvočíslo.\n"))
+# SPOJOVÁNÍ ŘETEZCŮ
+# vstup = input("Zadej něco, co chceš opakovat\n")
+# vystup = vstup +" "+ vstup
+# print(vystup)
 
-def prime_number_checker (number):
-    result = "Je to provočíslo."
-    for y in range(2,number):
-        if number % y == 0:
-            result = "Není to prvočíslo."
-    print(result)
+# ZAOKROUHLOVÁNÍ
+# cislo_a = float(input("Zadej číslo a"))
+# cislo_b = float(input("Zadej číslo b"))
+# result = cislo_a * cislo_b
+# print(round(result,2))
+# print(round(result,0))
+# print(round(result,-1))
 
-prime_number_checker(number)
