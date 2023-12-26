@@ -79,4 +79,33 @@
 # elif a == b:
 #     print ("OK")
 # else: print("Dobrý")
-# #
+# # match:
+    # # case X:
+# a = 5
+# b = 4
+# volba = "C"
+# match volba:
+#     case "A":
+#         print(a+b)
+#     case "B":
+#         print(a-b)
+#     case "C":
+#         print(a*b)
+
+# # 8. CYKLY
+# # for prvek in sekvence
+# # range(začátek, konec, krok)
+    # # range(n) - vrátí čísla od nuly do n-1 (do n,které už zahrnuto není)
+    # # range(m, n) - vrátí čísla od m do n-1,
+    # # range(m, n, i) - vrátí čísla od m a každé další i-té číslo do n-1
+# # cyklus for
+# for i in range(3):
+#     print("Knock")
+# for y in range(1,11,2):
+#     print(y,end="")
+# # cyklus for: násobilka
+# for y in range(1,11):
+#     for x in range(y,100,y):
+#         print(y*x,end=" ")
+#     print()
+
