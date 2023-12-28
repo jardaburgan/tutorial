@@ -70,6 +70,17 @@
 # # string.replace(oldvalue, newvalue, count): nahradí část řetězce za jiný
 # a = "Python je špatný"
 # print(a.replace("špatný","dobrý"))
+# # řezání řetězce seznam[m:n:i] - vybere m a každý i-tý znak do n-1, převrácení řetezce: [::-1]
+# retezec = "honolulu"
+# print(retezec[0])
+# print(retezec[1:4])
+# print(retezec[3:9:2])
+# print(retezec[::-1])
+# # find(): Metoda nám vrátí index první pozice podřetězce v jiném řetězci. Hledaný podřetězec předáváme jako parametr. Pokud není nalezen, vrátí -1.
+# # index(): Metoda nám vrátí index první pozice podřetězce v jiném řetězci.Pokud nenalezne, vyvolá Valueerror
+# # isalpha(): Metoda nám vrátí hodnotu True, pokud jsou všechny znaky v řetězci písmenné znaky
+# # isdigit(): Metoda vrátí True, pokud jsou všechny znaky v řetězci číselné znaky (0 - 9)
+# # islower(), isupper()
 
 # # 7. PODMÍNKY A VĚTVENÍ
 # a = 5
@@ -108,4 +119,59 @@
 #     for x in range(y,100,y):
 #         print(y*x,end=" ")
 #     print()
+# # cyklus while
+
+# # 9. SEZNAM - list
+# # deklarujeme pomocí []
+# # převod sekvence do seznamu je pomocí funkce list()
+# cisla = range(1,10)
+# print(list(cisla[1:7:2]))
+# # funkce len vrací počet prvků v seznamu
+# # funkce enumerate vrací jak index prvku v seznamu, tak i samotný prvek
+# cisla = [2,3,16,21]
+# cisla.append(13)
+# cisla.insert(1,10)
+# cisla.extend([52,53,54])
+# print(cisla)
+# # list.remove: odstraní definovanou položku se seznamu
+# cisla.remove(16)
+# print(cisla)
+# cisla.clear()
+# print(cisla)
+# # list.reverse(): otočí pořadí položek v seznamu tak, že první položka je nyní poslední
+# # list.count(): vrátí počet výskytů definované položky
+# cisla = [2,3,16,21,2,28,2]
+# print(cisla.count(2))
+# # list.sort(): seznam seřadí
+# cisla = [2,3,16,21,2,28,2]
+# cisla.sort()
+# print(cisla)
+# # list.index(): vrátí index prvního výskytu definované položky seznamu
+# # funkce sorted(): vrátí setříděnou kopii původního seznamu
+# cisla = [2,3,16,21,2,28,2]
+# setridena_cisla = sorted(cisla)
+# print(setridena_cisla)
+# # převedení seznamu z formátu string na číselný formát
+# seznam = ["2","3","16","21","2","28","2"]
+# for i in range(0,len(seznam)):
+#     seznam[i] = int(seznam[i])
+# print(seznam)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
