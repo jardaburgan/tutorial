@@ -102,6 +102,21 @@
 #         print(a-b)
 #     case "C":
 #         print(a*b)
+# # match: propadávání - Case sjednotím pomocí znaku |
+# mesic = 11
+# match (mesic):
+#     case 1 | 2 | 3:
+#         print("Je první čtvrtletí.")
+#     case 4 | 5 | 6:
+#         print("Je druhé čtvrtletí.")
+#     case 7 | 8 | 9:
+#         print("Je třetí čtvrtletí.")
+#     case 10 | 11 | 12:
+#         print("Je čtvrté čtvrtletí.")
+# # Ternární výraz: prvni_hodnota if (vyraz) else druha_hodnota
+# muz = True
+# nazev_pohlavi =  "muž" if (muz ) else "žena"
+# print(nazev_pohlavi)
 
 # # 8. CYKLY
 # # for prvek in sekvence
@@ -158,6 +173,10 @@
 # print(seznam)
 # # split () - string.split(separator, maxsplit): rozdělí textový řetězec do seznamu (listu). Jako separátor je defaultně ",".
 # # join () - string.join(iterable): vezme všechny podřetězce a spojí je do jednoho řetězce (stringu)
+
+
+
+
 
 
 
