@@ -16,6 +16,8 @@ alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'
 #         print(alphabet[new_letter_index], end="")
 # else:
 #     print("Zadal si špatný příkaz, zkus znovu.")
+
+
 def sifra (message, shift,instruction):
     new_text = ""
     for initial_letter in message:

@@ -156,6 +156,8 @@
 # for i in range(0,len(seznam)):
 #     seznam[i] = int(seznam[i])
 # print(seznam)
+# # split () - string.split(separator, maxsplit): rozdělí textový řetězec do seznamu (listu). Jako separátor je defaultně ",".
+# # join () - string.join(iterable): vezme všechny podřetězce a spojí je do jednoho řetězce (stringu)
 
 
 
