@@ -135,6 +135,22 @@
 #         print(y*x,end=" ")
 #     print()
 # # cyklus while
+# # příkaz pass: cyklus se projede, ale nic se nevykoná
+# for a in range(0,10):
+#     pass
+# print("Hotovo")
+# # příkaz "break": ukončí aktuálně běžící cyklus
+# # příkaz "continue": ukončí aktuální iteraci cyklu a ne celý cyklus jako "break"
+# cisla_retezec = "10,50,abcd,30,9"
+# cisla_seznam = cisla_retezec.split(',')
+# soucet = 0
+# for cislo in cisla_seznam:
+#     if not cislo.isdigit():
+#         continue
+#     else:
+#         cele_cislo = int(cislo)
+#         soucet += cele_cislo
+# print(f"Součet je: {soucet}")
 
 # # 9. SEZNAM - list
 # # deklarujeme pomocí []
@@ -174,9 +190,19 @@
 # # split () - string.split(separator, maxsplit): rozdělí textový řetězec do seznamu (listu). Jako separátor je defaultně ",".
 # # join () - string.join(iterable): vezme všechny podřetězce a spojí je do jednoho řetězce (stringu)
 
-
-
-
+# # 10. FUNKCE
+# # def "název funkce"("názvy argumentu(ů) funkce"):
+# #    return
+# # def mocnina(cislo):         # Cislo je název argumentu
+# #    cislo = cislo ** 2
+# #    return cislo
+# # prvni_cislo = mocnina(2)    # Dvojka v závorce je námi dosazovaná hodnota argumentu
+# # print(prvni_cislo)
+# def soucin (x,y,z):
+#     cislo = x * y * z
+#     return cislo
+# vypocet = soucin(2,5,8)
+# print(vypocet)
 
 
 
