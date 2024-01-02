@@ -4,22 +4,23 @@ print("Zadejte text k zašifrování: ")
 vstup = "moribundus"
 
 print("Zadejte heslo: ")
-heslo ="ab "
+heslo ="ahoj"
 
 zasifrovana_zprava = ""
-
 delka_hesla = len(heslo)
-print(delka_hesla)
+pozice_hesla = 0
 
-for znak in heslo:
-    posun = abeceda.index(znak)
-    print(posun)
-    for znak in vstup:
-        pozice_znaku = abeceda.index(znak)
-        nova_pozice_znaku = pozice_znaku + posun
-        novy_znak = abeceda[nova_pozice_znaku]
-        zasifrovana_zprava += novy_znak
-
-
+for pismeno in vstup:
+    # pokud je heslo kratší než šifrovaný text, jedu od začátku hesla
+    if pozice_hesla == delka_hesla:
+        pozice_hesla -= delka_hesla
+    # naleznu index každého písmene ve vstupu
+    stara_pozice = abeceda.index(pismeno)
+    # definuji index šifrovaného znaku (písmene)
+    nova_pozice = stara_pozice + (abeceda.index(heslo[pozice_hesla])) + 1
+    # do zašifrované zprávy pošlu zašifrované písmeno
+    zasifrovana_zprava += abeceda[nova_pozice]
+    # posunu se v heslu o jeden znak dále a hledám následně index dalšího znaku v pořadí
+    pozice_hesla +=1
 
 print(zasifrovana_zprava)

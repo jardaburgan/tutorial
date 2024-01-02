@@ -27,9 +27,15 @@
 # # modulo (zbytek při dělení)
 # print(x%y)
 
-# # 4. MODULY
-# # decimal - datový typ desetiných čísel
-# # fractions - modul na zlomky
+# # 4. MODULY (KNIHOVNY)
+# # import nazev_modulu; from nazev_modulu import nazev_funkce
+# # zpřístupnění všeho z knihovny: from nazev_modulu import *
+# # decimal: datový typ desetiných čísel
+# # fractions: modul na zlomky
+# # math:
+        # # Goniometrické funkce sin(), cos(), tan(), asin(), acos() a atan()
+        # # Funkce pro zaokrouhlování ceil() a floor()
+        # # fabs(), factorial(), pow() a sqrt()
 
 # # 5. DATOVÉ TYPY
 # # text: str
@@ -203,11 +209,40 @@
 #     return cislo
 # vypocet = soucin(2,5,8)
 # print(vypocet)
+# # def generuj_ahoj(jmeno: str) -> str:      #  Návratová hodnota funkce bude str
+# #    return "Ahoj, " + jmeno + "!"
+# # Úprava funkce print: sep - argument udává mezery mezi jednotlivými prvky
+# # Úprava funkce print: end - definuje, čím se zápis ukončí - normálně se tak děje znakem nového řádku ("\n")
+# print(1, 2, 3, "a", sep="-")
+# print("Žádná nová řádka", end=" ")
+# print("nebude.", end=" ")
 
-
-
-
-
+# # 11. CHYBY
+# # try - expect: ošetření chyb
+# # try:
+# # except jmeno_prvni_vyjimky:     #  Blok příkazů
+# # except jmeno_dalsi_vyjimky:     #  Blok příkazů
+# # else:                           #  Tento blok příkazů se provede, pokud nenastane žádná chyba.
+# # finally:                        #  Blok příkazů, který se provede vždy.
+# # SyntaxError - chyba je ve zdrojovém kódu,
+# # ZeroDivisionError - pokus o dělení nulou,
+# # TypeError - nesprávné použití datových typů - např.sčítání řetězce a čísla,
+# # ValueError - nesprávná hodnota.
+# while True:
+#     try:
+#         delenec = float(input("Zadejte číslo, které chcete dělit: "))
+#         delitel = float(input("Zadejte číslo, kterým chcete dělit: "))
+#         vysledek = delenec / delitel
+#     except ZeroDivisionError:
+#         print("Dělení nulou není možné!")
+#     except ValueError:
+#         print("Byla zadána neplatná hodnota!")
+#     else:
+#         print(f"Výsledek dělení je: {vysledek}")
+#     finally:
+#         opustit = input("Chcete ukončit program? (ano/ne): ").lower()
+#         if opustit == "ano":
+#             break
 
 
 
