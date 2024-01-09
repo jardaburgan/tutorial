@@ -48,6 +48,7 @@
 # b = Fraction (1,7)
 # print(a+b)
 # # funkce zobrazující datový typ: type
+# # Dictionary: key - value
 
 # # 6. TEXTOVÉ ŘETĚZCE
 # prázdný_řetězec = " "
@@ -244,16 +245,15 @@
 #         if opustit == "ano":
 #             break
 
-
-
-
-
-
-
-
-
-
-
-
-
+# # 11. DICTIONARY: key - value: označuji pomocí závorek {}
+# it_dictionary = {
+#     "String": "Text",
+#     "Integer": "Celé číslo"
+# }
+# print(it_dictionary)
+# print(it_dictionary["String"])
+# # přidání key do slovníku:
+# it_dictionary["float"] = "desetinné číslo"
+# print(it_dictionary)
+# # vyprázdnění slovníku: it_dictionary = {}
 
