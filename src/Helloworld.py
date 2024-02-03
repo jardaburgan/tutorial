@@ -256,4 +256,10 @@
 # it_dictionary["float"] = "desetinné číslo"
 # print(it_dictionary)
 # # vyprázdnění slovníku: it_dictionary = {}
+# # Vypsání key a pak value pomocí cyklu
+# student_result = {"Harry": 85, "Ron": 71, "Hermiona": 98, "Draco": 69}
+# for key in student_result:
+#     print(key)
+#     print(student_result[key])
+
 
